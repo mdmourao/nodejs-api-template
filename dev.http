@@ -1,0 +1,22 @@
+
+GET http://localhost:3000/ping
+
+###
+
+GET http://localhost:3000/not-found
+
+###
+
+POST  http://localhost:3000/api/v1/users
+content-type: application/json
+
+{
+    "name": "João Maria",
+    "email": "example2@example.pt",
+    "password": "superMesaSagePasOla1222!"
+}
+
+
+###
+
+GET  http://localhost:3000/api/v1/users
