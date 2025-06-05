@@ -21,3 +21,4 @@ jobs:
           extensions: "js,jsx,ts,tsx"
           annotations: true
           eslint-path: "."
+          all-files: true
