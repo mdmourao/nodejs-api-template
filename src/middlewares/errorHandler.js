@@ -1,4 +1,4 @@
-export const errorHandler = (error, req, res, next) => {
+export const errorHandler = (error, req, res) => {
   if (error.statusCode || error.status) {
     return res.status(error.statusCode || error.status).json({
       message: error.message,
