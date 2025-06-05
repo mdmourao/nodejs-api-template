@@ -28,7 +28,7 @@ app.use(limiter);
 
 app.use("/api/v1", apiRoutes);
 
-app.all(/(.*)/, (req, res, next) => {
+app.all(/(.*)/, (req, res) => {
   res.status(404).json({
     status: "not found",
     detail: req.url + " not found on this server",
